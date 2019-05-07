@@ -1,10 +1,11 @@
 local functions = {
     --Get a list of all commands
     help = function()
-        local outputString = "The recognized commands are:"
+        local outputString = "The recognized commands are:";
         for funcName,func in pairs(functions) do
             outputString = outputString .. "\n" .. funcName;
         end;
+        print(outputString);
     end;
 };
 
